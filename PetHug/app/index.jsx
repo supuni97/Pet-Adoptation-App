@@ -1,9 +1,16 @@
+import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View>
-      <Text>Hello world</Text>
+    <View
+      style={{
+        flex: 1,
+      }}
+    >
+      <Link href={"/login"}>
+        <Text>Go to Login Screen</Text>
+      </Link>
     </View>
   );
 }
